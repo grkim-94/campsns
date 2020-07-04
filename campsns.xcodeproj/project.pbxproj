@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F403DB0F24ACDBF200D9DBD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403DB0E24ACDBF200D9DBD3 /* AppDelegate.swift */; };
-		F403DB1124ACDBF200D9DBD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403DB1024ACDBF200D9DBD3 /* SceneDelegate.swift */; };
-		F403DB1324ACDBF200D9DBD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403DB1224ACDBF200D9DBD3 /* ContentView.swift */; };
 		F403DB1524ACDBF300D9DBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F403DB1424ACDBF300D9DBD3 /* Assets.xcassets */; };
-		F403DB1824ACDBF300D9DBD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F403DB1724ACDBF300D9DBD3 /* Preview Assets.xcassets */; };
 		F403DB1B24ACDBF300D9DBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F403DB1924ACDBF300D9DBD3 /* LaunchScreen.storyboard */; };
 		F403DB2624ACDBF300D9DBD3 /* campsnsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403DB2524ACDBF300D9DBD3 /* campsnsTests.swift */; };
 		F403DB3124ACDBF300D9DBD3 /* campsnsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403DB3024ACDBF300D9DBD3 /* campsnsUITests.swift */; };
+		F4A79EF924B0BDA800991847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A79EF824B0BDA800991847 /* ViewController.swift */; };
+		F4A79EFB24B0BDD600991847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A79EFA24B0BDD600991847 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +36,7 @@
 /* Begin PBXFileReference section */
 		F403DB0B24ACDBF200D9DBD3 /* campsns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campsns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F403DB0E24ACDBF200D9DBD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F403DB1024ACDBF200D9DBD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F403DB1224ACDBF200D9DBD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F403DB1424ACDBF300D9DBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F403DB1724ACDBF300D9DBD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F403DB1A24ACDBF300D9DBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F403DB1C24ACDBF300D9DBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F403DB2124ACDBF300D9DBD3 /* campsnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campsnsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +45,8 @@
 		F403DB2C24ACDBF300D9DBD3 /* campsnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campsnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F403DB3024ACDBF300D9DBD3 /* campsnsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campsnsUITests.swift; sourceTree = "<group>"; };
 		F403DB3224ACDBF300D9DBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A79EF824B0BDA800991847 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4A79EFA24B0BDD600991847 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,22 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				F403DB0E24ACDBF200D9DBD3 /* AppDelegate.swift */,
-				F403DB1024ACDBF200D9DBD3 /* SceneDelegate.swift */,
-				F403DB1224ACDBF200D9DBD3 /* ContentView.swift */,
 				F403DB1424ACDBF300D9DBD3 /* Assets.xcassets */,
 				F403DB1924ACDBF300D9DBD3 /* LaunchScreen.storyboard */,
 				F403DB1C24ACDBF300D9DBD3 /* Info.plist */,
-				F403DB1624ACDBF300D9DBD3 /* Preview Content */,
+				F4A79EF824B0BDA800991847 /* ViewController.swift */,
+				F4A79EFA24B0BDD600991847 /* Main.storyboard */,
 			);
 			path = campsns;
-			sourceTree = "<group>";
-		};
-		F403DB1624ACDBF300D9DBD3 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F403DB1724ACDBF300D9DBD3 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F403DB2424ACDBF300D9DBD3 /* campsnsTests */ = {
@@ -241,8 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F403DB1B24ACDBF300D9DBD3 /* LaunchScreen.storyboard in Resources */,
-				F403DB1824ACDBF300D9DBD3 /* Preview Assets.xcassets in Resources */,
 				F403DB1524ACDBF300D9DBD3 /* Assets.xcassets in Resources */,
+				F4A79EFB24B0BDD600991847 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F403DB0F24ACDBF200D9DBD3 /* AppDelegate.swift in Sources */,
-				F403DB1124ACDBF200D9DBD3 /* SceneDelegate.swift in Sources */,
-				F403DB1324ACDBF200D9DBD3 /* ContentView.swift in Sources */,
+				F4A79EF924B0BDA800991847 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,10 +423,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"campsns/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 433W2KWFKB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = campsns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,10 +444,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"campsns/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 433W2KWFKB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = campsns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
