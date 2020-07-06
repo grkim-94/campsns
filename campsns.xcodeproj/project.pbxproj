@@ -12,6 +12,7 @@
 		F403DB1B24ACDBF300D9DBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F403DB1924ACDBF300D9DBD3 /* LaunchScreen.storyboard */; };
 		F403DB2624ACDBF300D9DBD3 /* campsnsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403DB2524ACDBF300D9DBD3 /* campsnsTests.swift */; };
 		F403DB3124ACDBF300D9DBD3 /* campsnsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403DB3024ACDBF300D9DBD3 /* campsnsUITests.swift */; };
+		F45EA72A24B35EAC008704C0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45EA72924B35EAC008704C0 /* KakaoOpenSDK.framework */; };
 		F4A79EF924B0BDA800991847 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A79EF824B0BDA800991847 /* ViewController.swift */; };
 		F4A79EFB24B0BDD600991847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A79EFA24B0BDD600991847 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		F403DB2C24ACDBF300D9DBD3 /* campsnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campsnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F403DB3024ACDBF300D9DBD3 /* campsnsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campsnsUITests.swift; sourceTree = "<group>"; };
 		F403DB3224ACDBF300D9DBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45EA72924B35EAC008704C0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		F4A79EF824B0BDA800991847 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4A79EFA24B0BDD600991847 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45EA72A24B35EAC008704C0 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F403DB0D24ACDBF200D9DBD3 /* campsns */,
+				F45EA72824B35E7A008704C0 /* Frameworks */,
 				F403DB2424ACDBF300D9DBD3 /* campsnsTests */,
 				F403DB2F24ACDBF300D9DBD3 /* campsnsUITests */,
 				F403DB0C24ACDBF200D9DBD3 /* Products */,
@@ -123,6 +127,14 @@
 				F403DB3224ACDBF300D9DBD3 /* Info.plist */,
 			);
 			path = campsnsUITests;
+			sourceTree = "<group>";
+		};
+		F45EA72824B35E7A008704C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F45EA72924B35EAC008704C0 /* KakaoOpenSDK.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,12 +438,17 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 433W2KWFKB;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = campsns/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.campfour.campsns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -447,12 +464,17 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 433W2KWFKB;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = campsns/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.campfour.campsns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

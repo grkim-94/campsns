@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KakaoOpenSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,5 +19,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    // MARK:- KakaoOpenSDK
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        // 앱의 커스텀 URL 스키마를 통해 수신된 링크를 처리
+        if (KOSession.isKakaoAgeAuthCallback(url)) {
+            return KOSession.handleOpen(url)
+        }
+        
+        return false
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if (KOSession.isKakaoAgeAuthCallback(url)) {
+            return KOSession.handleOpen(url)
+        }
+        
+        return false
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        KOSession.handleDidBecomeActive()
+    }
+
 }
 
